@@ -1,0 +1,229 @@
+body {
+    background-image: url(pattern-background-desktop.svg) ;
+    font-family: 'Red Hat Display', sans-serif;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: rgba(224, 232, 255, 1);
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 327px;
+    height: 567px;
+    background-color:rgba(255, 255, 255, 1);
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.1518);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-image {
+    border-radius: 20px 20px 0px 0px;
+    height: 160px;
+    width: 327px;
+}
+
+.order-description {
+    text-align: center;
+    padding: 0px 32px;
+}
+
+.order-description h1 {
+    font-family: Red Hat Display;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(31, 46, 85, 1);
+    margin-top: 32px;
+}
+
+.order-description p {
+    margin-top: 16px;
+    font-family: Red Hat Display;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(113, 127, 166, 1);
+}
+
+.price-div {
+    margin: 0px 24px;
+    display: flex;
+    align-items: center;
+    width: 279px;
+    background: rgba(247, 249, 255, 1);
+    height: 81px;
+    border-radius: 11px;
+}
+
+.annual-plan {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-div img {
+    height: 48px;
+    width: 48px;
+    padding: 17px 20px 16px 16px;
+}
+
+.price-div h2 {
+    font-family: Red Hat Display;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(31, 46, 85, 1);
+    margin: 0px;
+    padding-bottom: 3px;
+}
+
+.price-div p {
+    font-family: Red Hat Display;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:rgba(113, 127, 166, 1);
+    margin: 0px;
+}
+
+.price-div button {
+    font-family: Red Hat Display;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-decoration: underline;
+    color: rgba(56, 42, 225, 1);
+    border: 0px;
+    background: rgba(247, 249, 255, 1);
+    margin-left: 42px;
+}
+
+.price-div button:hover {
+    cursor: pointer;
+    color: rgba(118, 108, 241, 1);
+}
+
+.last-div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.payment {
+    height: 50px;
+    width: 279px;
+    border-radius: 11px;
+    margin-top: 24px;
+    border: 0px;
+    background: rgba(56, 42, 225, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: Red Hat Display;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 20px;
+    letter-spacing: 0px;
+    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.1903);
+}
+
+.payment:hover {
+    background: rgba(118, 108, 241, 1);
+    cursor: pointer;
+}
+
+.cancel {
+    margin-top: 25px;
+    font-family: Red Hat Display;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: rgba(113, 127, 166, 1);
+}
+
+.cancel:hover {
+    cursor: pointer;
+    color: rgba(31, 46, 85, 1);
+}
+
+
+@media screen and (min-width:1440px) {
+    .card {
+        width: 450px;
+        height: 697px;
+        display: block;
+    }
+
+    .hero-image {
+        width: 450px;
+        height: 220px;
+    }
+
+    .container {
+        padding: 0px 48px;
+    }
+
+    .container div {
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .order-description h1 {
+        font-family: Red Hat Display;
+        font-size: 28px;
+        font-weight: 900;
+        line-height: 37px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    .order-description p {
+        font-family: Red Hat Display;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    .price-div {
+        height: 98px;
+        width: 354px;
+        border-radius: 11px;
+    }
+
+    .price-div img {
+        padding: 25px 20px 25px 24px;
+    }
+
+    .annual-plan h2 {
+        padding-bottom: 6px;
+    }
+
+    .price-div button {
+        margin-left: 94px;
+    }
+
+    .payment {
+        height: 50px;
+        width: 354px;
+        border-radius: 11px;
+        background: rgba(56, 42, 225, 1);
+        margin-top: 32px;
+        margin-left: 0px;
+    }
+
+    .cancel {
+        margin-top: 32px;
+    }
+}
